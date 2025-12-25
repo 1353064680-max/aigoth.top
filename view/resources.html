@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资源 - NeonTonight</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            background-color: #f5f5f5;
+            padding-top: 70px;
+            background-image: url('../image/background-resources.png');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+        .resource-banner {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+            background-size: cover;
+            color: white;
+            padding: 60px 20px;
+            margin: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .resource-category {
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .resource-link {
+            display: block;
+            padding: 15px;
+            margin-bottom: 10px;
+            background-color: #f8f8f8;
+            border-left: 4px solid #4CAF50;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+        }
+        .resource-link:hover {
+            background-color: #e8f5e9;
+            transform: translateX(5px);
+        }
+        .resource-link h4 {
+            margin-top: 0;
+            color: #4CAF50;
+        }
+        .navbar-brand {
+            font-weight: bold;
+        }
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: rgba(34, 34, 34, 0.9);
+            color: #fff;
+            text-align: center;
+            border-radius: 0 0 10px 10px;
+        }
+        .colored-icon {
+            color: #4CAF50;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">NeonTonight</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="server-info.html">服务器信息</a></li>
+                    <li class="active"><a href="resources.html">资源</a></li>
+                    <li><a href="community.html">社区</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html">登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="resource-banner">
+        <div class="container">
+            <h1>资源中心</h1>
+            <p>获取服务器相关资源、模组包和客户端下载</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="resource-category">
+            <h2><span class="glyphicon glyphicon-globe colored-icon"></span> 通用链接</h2>
+            <p>常用工具和相关网站链接</p>
+                        
+            <a href="https://www.minecraft.net/" class="resource-link" target="_blank">
+                <h4>Minecraft官网 (minecraft.net)</h4>
+                <p>访问Minecraft官方网站，获取正版游戏信息</p>
+            </a>
+            
+            <a href="https://mcmod.cn/" class="resource-link" target="_blank">
+                <h4>MC百科 (mcmod.cn)</h4>
+                <p>最全面的Minecraft模组和资源包百科网站</p>
+            </a>
+            
+            <a href="https://littleskin.cn/" class="resource-link" target="_blank">
+                <h4>LittleSkin皮肤站 (littleskin.cn)</h4>
+                <p>国内知名的Minecraft皮肤站，获取独特的角色皮肤</p>
+            </a>
+            
+            <a href="https://zh.minecraft.wiki/" class="resource-link" target="_blank">
+                <h4>Minecraft中文Wiki (zh.minecraft.wiki)</h4>
+                <p>最权威的Minecraft中文资料库，获取游戏指南和百科知识</p>
+            </a>
+        </div>
+
+        <div class="resource-category">
+            <h2><span class="glyphicon glyphicon-play colored-icon"></span> 启动器下载</h2>
+            <p>推荐的Minecraft启动器</p>
+            
+            <a href="https://pcl.ruanmao.net/" class="resource-link" target="_blank">
+                <h4>PCL启动器</h4>
+                <p>功能强大的Minecraft启动器，支持一键安装模组和资源包</p>
+            </a>
+            
+            <a href="https://hmcl.huangyuhui.net/" class="resource-link" target="_blank">
+                <h4>HMCL启动器</h4>
+                <p>开源的Minecraft启动器，支持多实例管理</p>
+            </a>
+            
+            <a href="#" onclick="wr()" class="resource-link">
+                <h4>官方启动器  <small><em>*真的有人会用吗</em></small></h4>
+                <p>Minecraft官方启动器，适用于正版账户<br><small><em>*到底是谁在用这个启动器啊</em></small></h4></p>
+            </a>
+        </div>
+
+        <div class="resource-category">
+            <h2><span class="glyphicon glyphicon-cog colored-icon"></span> 整合包下载</h2>
+            <p>手动安装整合包，适用于已有Minecraft启动器的玩家</p>
+            
+            <a href="#" class="resource-link">
+                <h4>NeonTonight完整整合包 v1.9.5</h4>
+                <p>包含所有服务器所需模组的完整模组包，适用于Minecraft 1.20.1</p>
+            </a>
+            
+            <a href="#" class="resource-link">
+                <h4>NeonTonight轻量整合包 v1.9.5</h4>
+                <p>仅包含核心模组的轻量版本，适用于低配置电脑或手机用户</p>
+            </a>
+            
+            <a href="#" class="resource-link">
+                <h4>NeonTonight资源包</h4>
+                <p>服务器专用资源包，提升游玩体验，包含材质和音效</p>
+            </a>
+        </div>
+
+        <div class="resource-category">
+            <h2><span class="glyphicon glyphicon-star colored-icon"></span> 自研模组介绍</h2>
+            <p>我们开发团队原创的特色模组</p>
+            
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">种族 (Species)</h3>
+                </div>
+                <div class="panel-body">
+                    <p>允许玩家选择不同种族，各个种族皆有不同的效果。</p>
+                    <p><strong>功能：</strong>种族选择、特殊的能力、更深的代入</p>
+                </div>
+            </div>
+            
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">机器码封禁 (Machineban)</h3>
+                </div>
+                <div class="panel-body">
+                    <p>高度可自定义的配置系统，保障服务器的安全。</p>
+                    <p><strong>功能：</strong>可通过mac地址、cpuid、主板序列号封禁违规玩家</p>
+                </div>
+            </div>
+            
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">更多模组详见服务器社群</h3>
+                </div>
+                <div class="panel-body">
+                    <p>更多自定义内容，特殊的玩法，新奇的设定。</p>
+                    <p><strong>群号：</strong>981****35</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="resource-category">
+            <h2><span class="glyphicon glyphicon-question-sign colored-icon"></span> 安装教程</h2>
+            <p>如何安装和配置我们的整合包</p>
+            
+            <a href="#" class="resource-link">
+                <h4>启动器安装教程</h4>
+                <p>使用官方启动器的完整安装指南</p>
+            </a>
+            
+            <a href="#" class="resource-link">
+                <h4>手机安装教程</h4>
+                <p>关于手机玩家游玩服务器的详细步骤</p>
+            </a>
+            
+            <a href="#" class="resource-link">
+                <h4>常见问题解答</h4>
+                <p>安装和使用过程中可能遇到的问题及解决方案</p>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 NeonTonight 服务器 &middot; <a href="#">隐私政策</a> &middot; <a href="#">服务条款</a></p>
+        </div>
+    </footer>
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script>
+        function wr() {
+            alert("自己找去");
+            console.log("不是还真有人会下这东西啊");
+        }
+    </script>
+</body>
+</html>

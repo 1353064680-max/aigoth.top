@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>社区 - NeonTonight</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            background-color: #f5f5f5;
+            background-image: url('../image/background-community.png');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            padding-top: 70px;
+        }
+        .community-banner {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+            background-size: cover;
+            color: white;
+            padding: 60px 20px;
+            margin: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .post {
+            background: white;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .post-title {
+            margin-top: 0;
+            color: #333;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        .author-info {
+            color: #777;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+        .event-box {
+            background: white;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .leaderboard-item {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .rank-number {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .navbar-brand {
+            font-weight: bold;
+        }
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">NeonTonight</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="server-info.html">服务器信息</a></li>
+                    <li><a href="resources.html">资源</a></li>
+                    <li class="active"><a href="community.html">社区</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html">登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="community-banner">
+        <div class="container">
+            <h1>玩家社区</h1>
+            <p>与全服玩家互动，分享你的建筑作品和游戏体验</p>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="post">
+                    <h3 class="post-title">欢迎来到新的维度！</h3>
+                    <div class="author-info">
+                        <span class="glyphicon glyphicon-user"></span> Admin · 
+                        <span class="glyphicon glyphicon-time"></span> 2025年12月20日 · 
+                        <span class="glyphicon glyphicon-comment"></span> 24条评论
+                    </div>
+                    <p>我们很高兴宣布，服务器已经更新了更多的维度！现在你可以探索全新的结构，寻找珍贵的战利品，挑战强大的敌人。</p>
+                    <p>新增内容包括：</p>
+                    <ul>
+                        <li>全新的维度</li>
+                        <li>独特的战利品表</li>
+                        <li>更多的生物</li>
+                        <li>新的合成配方</li>
+                    </ul>
+                    <p>快加入服务器体验吧！</p>
+                </div>
+
+                <div class="post">
+                    <h3 class="post-title">猎人大赛结果公布</h3>
+                    <div class="author-info">
+                        <span class="glyphicon glyphicon-user"></span> Admin · 
+                        <span class="glyphicon glyphicon-time"></span> 2025年12月15日 · 
+                        <span class="glyphicon glyphicon-comment"></span> 42条评论
+                    </div>
+                    <p>感谢所有参与猎人大赛的玩家！我们统计了最终的结果并做出最终决定。</p>
+                    <p>获奖名单如下：</p>
+                    <ol>
+                        <li><strong>第一名：</strong>玩家 Edoski_</li>
+                        <li><strong>第二名：</strong>玩家 Bronya_angel</li>
+                        <li><strong>第三名：</strong>玩家 Gk_litchi</li>
+                    </ol>
+                    <p>恭喜所有获奖者！奖品将在24小时内发放（实物奖品约在一个月内陆续发货）。</p>
+                </div>
+
+                <div class="post">
+                    <h3 class="post-title">速通活动即将开始</h3>
+                    <div class="author-info">
+                        <span class="glyphicon glyphicon-user"></span> Admin · 
+                        <span class="glyphicon glyphicon-time"></span> 2025年9月10日 · 
+                        <span class="glyphicon glyphicon-comment"></span> 97条评论
+                    </div>
+                    <p>速通活动即将到来！在9月13日，服务器将短暂切换新的存档供玩家进行速通，奖品丰厚，欢迎各位参加。</p>
+                    <p>活动内容包括：</p>
+                    <ul>
+                        <li>从头开始，考验你真正的技术</li>
+                        <li>合作 or 竞技，选择将影响结果</li>
+                        <li>末地影藏了特殊的变化</li>
+                        <li>成功杀死末影龙的即为冠军</li>
+                    </ul>
+                    <p>敬请期待更多详情！</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="event-box">
+                    <h3>近期活动</h3>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">更多维度开放</h4>
+                        </div>
+                        <div class="panel-body">
+                            探索新更新的维度，寻找稀有战利品！
+                            <br><small class="text-muted">持续至 2099-12-31</small>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">猎人大赛</h4>
+                        </div>
+                        <div class="panel-body">
+                            抓住更多的猎物，获得更高的分数！
+                            <br><small class="text-muted">报名截止 2025-12-13</small>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">双倍挖矿周末</h4>
+                        </div>
+                        <div class="panel-body">
+                            周末指定时间段期间挖矿获得双倍经验和掉落物！
+                            <br><small class="text-muted">12月27日-28日每日12:00</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-box">
+                    <h3>玩家排行榜<br><small><em>*管理组不计入排名</em></small></h3>
+                    <div class="leaderboard-item">
+                        <span class="rank-number">1</span> awawa_IV <span class="pull-right">20,000 分</span>
+                    </div>
+                    <div class="leaderboard-item">
+                        <span class="rank-number">2</span> Edoski_ <span class="pull-right">19,120 分</span>
+                    </div>
+                    <div class="leaderboard-item">
+                        <span class="rank-number">3</span> Bronya_angel <span class="pull-right">19,060 分</span>
+                    </div>
+                    <div class="leaderboard-item">
+                        <span class="rank-number">4</span> Gk_litchi <span class="pull-right">19,030 分</span>
+                    </div>
+                    <div class="leaderboard-item">
+                        <span class="rank-number">5</span> Kitten_Win10 <span class="pull-right">19,020 分</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 NeonTonight 服务器 &middot; <a href="#">隐私政策</a> &middot; <a href="#">服务条款</a></p>
+        </div>
+    </footer>
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.js"></script>
+</body>
+</html>

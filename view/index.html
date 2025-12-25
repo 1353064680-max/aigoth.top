@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeonTonight - Minecraft服务器</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            background-color: #f5f5f5;
+            padding-top: 70px;
+            background-image: url('../image/background-index.png');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+        .main-content {
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .jumbotron {
+            background: rgba(255, 255, 255, 0);
+            color: #333;
+            border-radius: 10px 10px 0 0;
+        }
+        .feature-icon {
+            font-size: 3em;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+        .navbar-brand {
+            font-weight: bold;
+        }
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: rgba(34, 34, 34, 0.9);
+            color: #fff;
+            text-align: center;
+            border-radius: 0 0 10px 10px;
+        }
+        .carousel-inner > .item > img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .carousel-caption {
+            background-color: rgba(0,0,0,0.5);
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .server-status {
+            background: white;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .status-item {
+            text-align: center;
+            padding: 10px;
+        }
+        .status-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #4CAF50;
+            display: block;
+        }
+        .news-item {
+            border-left: 3px solid #4CAF50;
+            padding: 10px;
+            margin-bottom: 15px;
+            background: #f9f9f9;
+        }
+        .colored-icon {
+            color: #4CAF50;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">NeonTonight</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">首页</a></li>
+                    <li><a href="server-info.html">服务器信息</a></li>
+                    <li><a href="resources.html">资源</a></li>
+                    <li><a href="community.html">社区</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html">登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="main-content">
+            <div class="jumbotron">
+                <h1>欢迎来到 NeonTonight!</h1>
+                <p>一个充满创意与冒险的Minecraft服务器，等待你的探索！</p>
+                <p><a class="btn btn-primary btn-lg" href="server-info.html" role="button">立即加入 &raquo;</a></p>
+                
+                <div id="imageCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#imageCarousel" data-slide-to="1"></li>
+                        <li data-target="#imageCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="..\image\index-image-1.png" alt="NeonTonight Image 1">
+                        </div>
+                        <div class="item">
+                            <img src="..\image\index-image-2.png" alt="NeonTonight Image 2">
+                        </div>
+                        <div class="item">
+                            <img src="..\image\index-image-3.png" alt="NeonTonight Image 3">
+                        </div>
+                    </div>
+
+                    <a class="left carousel-control" href="#imageCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#imageCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon">
+                        <span class="glyphicon glyphicon-globe"></span>
+                    </div>
+                    <h3>多种游戏模式</h3>
+                    <p>生存、创造、小游戏等多种模式任你选择，满足不同玩家的需求。</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon">
+                        <span class="glyphicon glyphicon-user"></span>
+                    </div>
+                    <h3>友好社区</h3>
+                    <p>活跃的玩家社区，友善的游戏环境，定期举办活动。</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="feature-icon">
+                        <span class="glyphicon glyphicon-lock"></span>
+                    </div>
+                    <h3>稳定运营</h3>
+                    <p>24小时稳定运行，专业维护团队，保障游戏体验。</p>
+                </div>
+            </div>
+
+            <div class="server-status">
+                <h3><span class="glyphicon glyphicon-stats colored-icon"></span> 服务器状态</h3>
+                <div class="row">
+                    <div class="col-md-3 status-item">
+                        <span class="status-number" id="online-players">--</span>
+                        <span>在线玩家</span>
+                    </div>
+                    <div class="col-md-3 status-item">
+                        <span class="status-number">50</span>
+                        <span>最大容量</span>
+                    </div>
+                    <div class="col-md-3 status-item">
+                        <span class="status-number">稳定</span>
+                        <span>服务器状态</span>
+                    </div>
+                    <div class="col-md-3 status-item">
+                        <span class="status-number">1.20.1</span>
+                        <span>支持版本</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="server-status">
+                <h3><span class="glyphicon glyphicon-bullhorn colored-icon"></span> 近期新闻</h3>
+                <div class="news-item">
+                    <h4>新模组上线：维度旅行系统</h4>
+                    <p><small class="text-muted">2025年12月23日</small></p>
+                    <p>我们添加了全新的维度旅行模组，现在你可以探索更多独特的世界！</p>
+                </div>
+                <div class="news-item">
+                    <h4>周末双倍经验活动</h4>
+                    <p><small class="text-muted">2025年12月23日</small></p>
+                    <p>本周末（12月27-28日）服务器将开启双倍经验活动，不要错过！</p>
+                </div>
+                <div class="news-item">
+                    <h4>周期积分结算结果公布</h4>
+                    <p><small class="text-muted">2025年12月23日</small></p>
+                    <p>恭喜获奖玩家：awawa_IV, Edoski_, Bronya_angel！</p>
+                </div>
+            </div>
+
+            <div class="server-status">
+                <h3><span class="glyphicon glyphicon-comment colored-icon"></span> 社区热门</h3>
+                <div class="news-item">
+                    <h4><a href="community.html">【攻略】新手生存指南</a></h4>
+                    <p><small class="text-muted">发表于 社群系统 | 514 条回复</small></p>
+                    <p>专为新玩家准备的生存攻略，从挖木头到建造家园的完整指南...</p>
+                </div>
+                <div class="news-item">
+                    <h4><a href="community.html">惊艳建筑作品展示</a></h4>
+                    <p><small class="text-muted">发表于 社群系统 | 114 条回复</small></p>
+                    <p>本周社区最惊艳的建筑作品，绝对值得你去实地参观...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 NeonTonight 服务器 &middot; <a href="#">隐私政策</a> &middot; <a href="#">服务条款</a></p>
+        </div>
+    </footer>
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script>
+        function updateServerStatus() {
+            var randomOnline = Math.floor(Math.random() * 15) + 20;
+            $('#online-players').text(randomOnline);
+        }
+
+        $(document).ready(function() {
+            updateServerStatus();
+            setInterval(updateServerStatus, 30000);
+        });
+    </script>
+    <script>
+        var referrer = document.referrer;
+        var currentDomain = window.location.hostname;
+        
+        if (!referrer || (referrer && !referrer.includes(currentDomain))) {
+            alert("测试页面，未完全实现所有功能！");
+            console.log("测试!!!");
+        }
+    </script>
+</body>
+</html>
